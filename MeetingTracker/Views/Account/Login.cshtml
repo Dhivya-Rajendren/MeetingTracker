@@ -1,0 +1,13 @@
+﻿@model MeetingTracker.Models.User
+
+<form method="post" asp-action="Login" >
+<input type="hidden" asp-for="ReturnURL"/>
+<div class=" form-group alert alert-info w-25">
+    <input class="form-control" asp-for="UserName" required placeholder="Enter UserName"/>
+    <input class="form-control" asp-for="Password" required placeholder="Enter Password"/>
+
+    <input type="submit" class="btn btn-info" value="Login"/>
+</div>
+
+
+</form>
